@@ -30,9 +30,7 @@ module.exports = function(grunt) {
 		        options: {
 		            middleware: function(connect) {
 		                return [
-		                    // connect.static('.tmp'),
-		                    // connect().use('/bower_components', connect.static('./bower_components')),
-		                    connect.static("dummy/../")
+		                    connect.static("haxxx/../")
 		                ];
 		            },
 
