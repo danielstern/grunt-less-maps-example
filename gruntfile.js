@@ -11,9 +11,8 @@ module.exports = function(grunt) {
 		            paths: [""],
 		            compress:true,
 		            sourceMap: true,
-		            sourceMapFilename: 'compiled.css.map',
+		            sourceMapFilename: 'css/compiled.css.map',
 		            sourceMapRootpath: '../',
-		            // sourceMapBasepath: "less/",
 		        },
 		        files: {
 		            "css/compiled.css": "less/styles.less",
@@ -24,18 +23,10 @@ module.exports = function(grunt) {
 		    options: {
 		        port: 666,
 		        open: true,
-		        // Change this to '0.0.0.0' to access the server from outside
 		        hostname: 'localhost'
 		    },
 		    livereload: {
-		        options: {
-		            middleware: function(connect) {
-		                return [
-		                    connect.static("haxxx/../")
-		                ];
-		            },
-
-		        }
+		       
 		    },
 		},
 		watch: {
@@ -48,5 +39,4 @@ module.exports = function(grunt) {
 	    'connect:livereload',
 	    'watch'
 	]);
-
 }
