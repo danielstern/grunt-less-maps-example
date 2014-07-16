@@ -12,11 +12,11 @@ module.exports = function(grunt) {
 		            compress:true,
 		            sourceMap: true,
 		            sourceMapFilename: 'compiled.css.map',
-		            // sourceMapRootpath: '',
+		            sourceMapRootpath: '../',
 		            // sourceMapBasepath: "less/",
 		        },
 		        files: {
-		            "css/compiled.css": "styles.less",
+		            "css/compiled.css": "less/styles.less",
 		        }
 		    },
 		},
